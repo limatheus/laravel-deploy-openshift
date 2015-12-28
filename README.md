@@ -1,5 +1,7 @@
 ## How to deploy a Laravel application on Openshift plataform
 
+This is a short and simple guide to deploy a existing Laravel application to Openshift.
+
 ![Laravel Openshift](http://s2.postimg.org/yzdx8n6x5/laravel_openshift.png)
 
 ### 1. clone this repository in a separated folder
@@ -18,7 +20,7 @@ cp -Rap .openshift /path/to/your/existing/application
 
 Change your `connection` parameters according your database driver.
 
-### MySQL
+### > MySQL
 ```php
 // database.php  config file
 // file START ommited
@@ -39,7 +41,7 @@ Change your `connection` parameters according your database driver.
 // file END ommited
 ```
 
-### PostgreSQL
+### >PostgreSQL
 
 ```php
 // database.php  config file
