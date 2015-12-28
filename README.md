@@ -1,4 +1,4 @@
-# How to deploy a Laravel application on Openshift plataform
+## How to deploy a Laravel application on Openshift plataform
 
 ### 1. clone this repository in a separated folder
 
