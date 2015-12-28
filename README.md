@@ -12,7 +12,9 @@ git clone https://github.com/limatheus/laravel-deploy-openshift.git
 cp -Rap .openshift /path/to/your/existing/application
 ```
 
-### 3. Modify your `config/database.php` file changing the `connection` parameters according your database driver:
+### 3. Modify your `config/database.php` file
+
+Change your `connection` parameters according your database driver.
 
 ### MySQL
 ```php
