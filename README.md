@@ -20,7 +20,7 @@ cp -Rap .openshift /path/to/your/existing/application
 
 Change your `connection` parameters according your database driver.
 
-### * MySQL
+* MySQL
 ```php
 // database.php  config file
 // file START ommited
@@ -41,7 +41,7 @@ Change your `connection` parameters according your database driver.
 // file END ommited
 ```
 
-### * PostgreSQL
+* PostgreSQL
 
 ```php
 // database.php  config file
