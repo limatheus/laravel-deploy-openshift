@@ -12,18 +12,12 @@ git clone https://github.com/limatheus/laravel-deploy-openshift.git
 cp -Rap .openshift /path/to/your/existing/application
 ```
 
-### 3. Modify your `config/database.php` file changing the `connection` parameters to:
+### 3. Modify your `config/database.php` file changing the `connection` parameters according your database driver:
 
+### MySQL
 ```php
 // database.php  config file
 // file START ommited
-    'connections' => [
-
-        'sqlite' => [
-            'driver'   => 'sqlite',
-            'database' => database_path('database.sqlite'),
-            'prefix'   => '',
-        ],
 
         'mysql' => [
             'driver'    => 'mysql',
@@ -36,8 +30,17 @@ cp -Rap .openshift /path/to/your/existing/application
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
-        ],
+        ]
         
+// file END ommited
+```
+
+### PostgreSQL
+
+```php
+// database.php  config file
+// file START ommited
+
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', env('OPENSHIFT_POSTGRESQL_DB_HOST', 'localhost')),
@@ -49,8 +52,9 @@ cp -Rap .openshift /path/to/your/existing/application
             'prefix'   => '',
             'schema'   => 'public',
         ]
-    ],
+        
 // file END ommited
 ```
+
 
 ### 4. Add remote origin to your existing git config
